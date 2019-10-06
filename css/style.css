@@ -1,3 +1,5 @@
+/* defaults */
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,9 +19,8 @@ div {
     display: flex;
 }
 
-/*
-  Navigation bar
-*/
+/* Navigation bar */
+
 .logo {
   height: 50px;
 }
@@ -53,9 +54,8 @@ div {
   border-color: #E74C3C;
 }
 
-/*
-  Background
-*/
+/* Background */
+
 .background {
   background-image: url(../images/cnc.jpeg);
   height: 2000px;
@@ -65,9 +65,9 @@ div {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-/*
-  Scroll Icon
-*/
+
+/* Scroll Icon */
+
 .scrollcontainer {
   width: 90%;
   margin: 50px auto;
@@ -148,16 +148,14 @@ div {
   }
 }
 
-/* 
-  Web content
-*/
+/*  Main content */
+
 .mainbody {
   display: flex;
   flex-direction: column;
   position: relative;
   top: -1800px;
 }
-
 .anchor {
   position: absolute;
   transform: translateY(-50vh);
@@ -179,7 +177,6 @@ div {
 .title h2 {
   text-align: center;
 }
-
 .bigcontainer {
   flex-direction: column;
   width: 100%;
@@ -187,7 +184,6 @@ div {
   background-color: #2F2E2E;
   background: linear-gradient(180deg, rgb(47,46,46,0) 0%, rgb(47,46,46,1) 59%, rgb(47,46,46,1) 100%);
 }
-
 .container {
   flex-direction: row;
   justify-content: space-around;
@@ -234,9 +230,9 @@ div {
   height: 400px;
   width: 800px;
 }
-/*
- Media Queries
-*/
+
+/* Media Queries */
+
 @media (max-width: 465px) {
   .logo {
     height: 30px;
@@ -246,6 +242,12 @@ div {
     padding: 2px 8px;
   }
 }
+@media (max-width: 820px) {
+  .map {
+    height: 300px;
+    width: 300px;
+  }
+ }
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
@@ -261,10 +263,4 @@ div {
   .c3 {
     height: 850px;
   }
-}
-@media (max-width: 820px) {
- .map {
-   height: 300px;
-   width: 300px;
- }
 }
