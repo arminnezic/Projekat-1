@@ -150,6 +150,8 @@ div {
   Web content
 */
 .mainbody {
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: -1800px;
 }
@@ -203,9 +205,33 @@ div {
 .description h2 {
   font-size: 40px;
 }
-
-
-
+.c3 h2 {
+  text-align: center;
+}
+.footer {
+  flex-direction: column;
+  align-content: center;
+  height: 650px;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact p {
+  width: 300px;
+  font-size: 20px;
+}
+.email {
+  text-decoration: none;
+  color: aqua;
+}
+.map {
+  height: 400px;
+  width: 800px;
+}
 /*
  Media Queries
 */
@@ -218,7 +244,6 @@ div {
     padding: 2px 8px;
   }
 }
-
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
@@ -231,5 +256,13 @@ div {
   .description {
     max-width: 90%;
   }
-
+  .c3 {
+    height: 850px;
+  }
+}
+@media (max-width: 820px) {
+ .map {
+   height: 300px;
+   width: 300px;
+ }
 }
