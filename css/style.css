@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
 }
@@ -62,7 +65,6 @@ div {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 /*
   Scroll Icon
 */
